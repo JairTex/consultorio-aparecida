@@ -19,6 +19,7 @@ header h1{
 	display:inline-block;
 	vertical-align:	middle;
 }
+
 header h2{
 	font-size: 2em;
 	display:inline-block;
@@ -49,6 +50,10 @@ section h2{
 	padding-bottom: .5em;
 	border-bottom: 1px solid #ccc;
 	margin-bottom: .5em;
+}
+
+#titulo-form{
+	margin: 1em 0 0;
 }
 
 table{
