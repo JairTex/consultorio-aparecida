@@ -12,4 +12,6 @@ botaoAdicionar.addEventListener("click", function (event) {
     adicionarNaTabelaPacientes(pacienteTr);
 
     limparForm();
+    
+    /*Para utilizar uma função padrão: form.reset(); */
 });
