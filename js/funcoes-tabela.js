@@ -13,8 +13,12 @@ function criarLinhaDado(classname, tdTextContent){
 
 function gerarPacienteTr(paciente){
     if ((paciente.peso <= 0 || paciente.peso >= 500) || (paciente.altura <= 0 || paciente.altura >= 3.00)) {
-        var pacienteTr = criarLinhaPaciente("paciente-invalido");
+        var mensagemErro = document.querySelector('#mensagem-erro');
+        mensagemErro.textContent = 'Cadastro Inválido: Verifique os dados!'
+        return
     } else {
+        var mensagemErro = document.querySelector('#mensagem-erro');
+        mensagemErro.textContent = ''
         var pacienteTr = criarLinhaPaciente("paciente");        
     }
 
